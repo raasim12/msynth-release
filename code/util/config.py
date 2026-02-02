@@ -1,11 +1,13 @@
+import os
 CUDA = 1
 DEBUG = False
 batch_size = 64
 num_workers = 12
 FLOAT = True
 
-# directory where training data will be downloaded to
-dir_head = "/gpfs_projects/elena.sizikova/testing/0/msynth-release/"
+# directory where training data will bce downloaded to
+dir_head = '/scratch0/raasim/projects/' #os.path.dirname(work_dir)
+#"/gpfs_projects/elena.sizikova/testing/0/msynth-release/"
 
 dir_training_data = dir_head + "data/"
 

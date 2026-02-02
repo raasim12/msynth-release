@@ -316,4 +316,4 @@ if train_classifier:
     dirPath = saveDir00
     saveDir_trainValTest = dirPath[:-1] + "_basic_train_val_test/"
 
-    util_classifier.train_model(saveDir_trainValTest, nickname, nreps=args.ntrainreps)
+    #util_classifier.train_model(saveDir_trainValTest, nickname, nreps=args.ntrainreps)
