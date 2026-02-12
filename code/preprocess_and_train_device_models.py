@@ -62,7 +62,7 @@ if not os.path.isdir(sourceDir0):
     print("saving to " + str(config.dir_training_data))
     hf_hub_download(
         repo_id="didsr/msynth",
-        use_auth_token=True,
+        token=True,
         repo_type="dataset",
         local_dir=config.dir_training_data,  # download directory for this dataset
         local_dir_use_symlinks=False,
@@ -84,7 +84,7 @@ if not os.path.isdir(config.dir_training_data + "metadata/bounds/"):
     print("saving to " + config.dir_training_data)
     hf_hub_download(
         repo_id="didsr/msynth",
-        use_auth_token=True,
+        token=True,
         repo_type="dataset",
         local_dir=config.dir_training_data,  # download directory for this dataset
         local_dir_use_symlinks=False,
